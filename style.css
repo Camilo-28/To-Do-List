@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat+Alternates:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates';
+    
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(73, 18, 18);
+   
+     
+}
+
+.videoFondo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+.videoFondo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.contenedor {
+    width: 700px;
+    min-height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0px 0px 58px -3px rgba(0, 0, 0, 0.59);
+    background-color: rgba(59, 14, 14, 0.329);
+  
+    backdrop-filter: blur(4px);
+    
+}
+.contenedorReloj{
+    font-size: larger;
+    font-weight: bold;
+    color: wheat;
+    height: 40px;
+}
+
+h1 {
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    text-align: center;
+    color: wheat;
+    font-weight: bolder;
+}
+button{
+    width: 30%;
+    height: 40px;
+    color: wheat;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+}
+#listaTareas{
+    z-index: 12;
+    width: 80%;
+    margin-top: 20px;
+    max-width: 80%;
+}
+.tarea{
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: wheat;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.tarea.completada{
+    text-decoration: line-through;
+    background-color: rgba(0, 0, 0, 0.26);
+    border: none;
+
+}
+.tarea p{
+    max-width: 350px;
+
+}
+i{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.icono-completar{
+    color: wheat;
+}
+.icono-eliminar{
+    color: red;
+}
+.icono-completar:hover,.icono-eliminar:hover{
+    background-color: rgba(255, 255, 255, 0.568);
+}
